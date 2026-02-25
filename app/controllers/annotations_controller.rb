@@ -57,6 +57,6 @@ class AnnotationsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def annotation_params
-    params.expect(annotation: [:title, :content]).to_h
+    params.expect(annotation: [ :title, :content ]).to_h
   end
 end
