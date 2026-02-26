@@ -2,7 +2,7 @@ class AnnotationsController < ApplicationController
   # GET /annotations
   def index
       @pagy, @annotations = pagy(Annotation.order(created_at: :desc), page: params[:page])
-      render json: { links: @pagy.urls_hash, data: @annotations }, status: :ok
+      render json: { links: @pagy.urls_hash, data: @annotations, total_page: @pagy.pages }, status: :ok
   end
 
   # GET /annotations/1
