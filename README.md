@@ -2,6 +2,8 @@
 
 API REST para gerenciar anotações utilizando arquitetura Use Case.
 
+O frontend se encontra nesse [repositório](https://github.com/NelcifranMagalhaes/keepAnnotationFrontend)
+
 ## Tecnologias
 
 - Ruby 3.3.6
